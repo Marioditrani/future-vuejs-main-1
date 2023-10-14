@@ -1,0 +1,392 @@
+$c-header: #121414;
+$c-red: #EE6059;
+$c-grey: #25292B;
+$c-d-grey: #202123;
+$c-black: #1E2123;
+$c-white: white;
+$c-x-light-grey:#EBEAEA;
+$c-light-grey:#999999;
+$c-light-dgrey:#464646;
+$c-bg:rgb(124, 156, 179);
+//$c-bg-1:rgb(178, 222, 237);
+$c-bg-1:rgba(20, 23, 83, 0);
+$c-bg-2:rgb(150, 170, 224);
+$c-f-az-op: rgba(236, 254, 255, 0.975);
+$c-f-az-op-med: rgba(37, 90, 101, 0.873);
+$c-p: rgba(187, 29, 201, 0.792);
+$c-p-s: rgba(217, 207, 229, 0.344);
+
+
+$d-title1-max:7rem;
+$d-title2-max: 6rem;
+$d-title1-min: 5rem;
+$d-title2-min: 3.55rem;
+$d-title3-min: 2.6rem;
+$d-title4-min: 2.3rem;
+
+$d-i-f-max: 60px;
+
+$m-w: 1100px;
+
+
+
+///**MIXIN**///
+@mixin dfc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin dfa {
+    display: flex;
+    align-items: center;
+}
+@mixin dfj {
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+///BLURR/////
+/// 
+ .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-6{
+position: absolute;
+z-index: 50;
+transition: all ease-in-out 1s;
+/*filter: blur(90px);*/
+
+/* border-radius: 70px; */
+}
+.b-1:hover{
+height: 370px;
+width: 260px;
+transition: all linear 1s !important;
+}
+.b-2:hover{
+height: 370px;
+width: 260px;
+transition: all linear 1s !important;
+}
+.b-3:hover{
+height: 170px;
+width: 260px;
+transition: all linear 1s !important;
+}
+.b-4:hover{
+height: 370px;
+width: 260px;
+transition: all linear 1s !important;
+}
+.b-5:hover{
+height: 370px;
+width: 260px;
+transition: all linear 1s !important;
+}
+.b-6:hover{
+height: 370px;
+width: 260px;
+transition: all linear 1s !important;
+}
+.b-1{
+background-color: #5D0B53;
+top: 30%;
+left: 30%;
+height: 200px;
+width: 150px;
+animation:  linear 7s infinite;
+}
+.b-2{
+background-color: #7756D6;
+top: 20%;
+left: 20%;
+height: 200px;
+width: 150px;
+animation: moveb2 linear 7s infinite;
+}
+.b-3{
+background-color: #0656b8;
+top: 5%;
+left: 5%;
+height: 200px;
+width: 200px;
+animation:  moveb1 linear 7s infinite;
+}
+.b-4{
+background-color: #04bdaa;
+bottom: 30%;
+right: 30%;
+height: 300px;
+width: 200px;
+}
+.b-5{
+background-color: #7756D6;
+bottom: 15%;
+right: 15%;
+height: 300px;
+width: 250px;
+}
+.b-6{
+background-color: #0656b8;
+bottom: 5%;
+right: 5%;
+height: 200px;
+width: 200px;
+}
+
+/* 
+@keyframes pulselogo {
+0%{
+    scale: 1;
+}
+36%{
+    scale: 1.03;
+}
+
+100%{
+    scale: 1;
+}
+}  */
+
+@keyframes loopb1 {
+0%{
+    scale: 1;
+    top: 30%;
+    left: 30%;
+    
+}
+30%{
+    scale: 1.05;
+    top: 35%;
+    left: 30%;
+}
+40%{
+    scale: 1;
+    top: 35%;
+    left: 32.5%;
+}
+50%{
+    scale: 1.06;
+    top: 32.5%;
+    left: 32.5%;
+}
+80%{
+    scale: 1;
+    top: 32.5%;
+    left: 27.5%;
+}
+90%{
+    scale: 1.05;
+    top: 30%;
+    left: 27.5%;
+}
+100%{
+    scale: 1;
+    top: 30%;
+    left: 30%;
+}
+} 
+@keyframes loopb2 {
+0%{
+    scale: 1;
+    top: 15%;
+    left: 15%;
+    
+}
+10%{
+    scale: 1.05;
+    top: 13%;
+    left: 15%;
+}
+50%{
+    scale: 1.05;
+    top: 20%;
+    left: 22%;
+}
+
+
+90%{
+    scale: 1.05;
+    top: 13%;
+    left: 20.5%;
+}
+100%{
+    scale: 1;
+    top: 15%;
+    left: 15%;
+}
+} 
+
+
+///wave
+ 
+.wave{
+    background-image: url('../../../public/wave-2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    background-position: right;
+    aspect-ratio: 2;
+   
+    
+    box-shadow: -50px -300px 5px $c-bg, 20px -300px 5px $c-bg;
+    
+    animation: waves ease-in-out 18s infinite;
+}
+.wave-2{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    background-position: right;
+    aspect-ratio: 1.8;
+
+    transform: translate( 0, -50%);
+   
+    
+    box-shadow: -50px -300px 5px $c-bg-1, 10px -300px 5px $c-bg-1;
+    
+    animation: waves ease-in-out 27s infinite;
+    z-index: 100;
+}
+.wave-3{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    background-position: right;
+    aspect-ratio: 2.6;
+   
+    transform: rotateX(-30deg);
+    
+    
+   // animation: wave-2 ease-in-out 23s infinite alternate;
+}
+
+
+@keyframes waves {
+    0%{
+               
+        transition: all linear 3s;
+        
+    }
+    25%{
+        
+        
+    }
+    50%{
+        background-position: center;
+
+    }
+    75%{
+        
+        
+        
+        
+    }
+    100%{
+        
+
+        
+        background-position: right;
+    }
+    
+   }
+@keyframes wave-2 {
+    0%{
+        background-position: left;
+ 
+        
+        
+    }
+    25%{
+               
+        
+        
+    }
+    50%{
+               
+
+    }
+    75%{
+        
+        
+        
+        
+        
+    }
+    100%{
+    
+        background-position: right;
+    }
+    
+   }
+
+   .card-sef {
+    position: relative;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    ;
+  }
+  
+  .bg-sef {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    z-index: 2;
+    background: rgba(127, 137, 189, 0.892);
+    backdrop-filter: blur(24px);
+    border-radius: 27px;
+    overflow: hidden;
+    padding: 1.5em;
+  }
+  
+  .blob-sef {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #00eeff;
+    opacity: 1;
+    filter: blur(20px);
+    animation: blob-bounce 8s infinite ease-in-out;
+  }
+
+
+   @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(-20%,-30%, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(130%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(130%, 130%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(-20%, 130%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(-20%, -30%, 0);
+    }
+  }
+  
