@@ -109,16 +109,66 @@ export default{
 }
 @keyframes moveb3{
     0%{
-
+        top: 30%;
+    left: 30%;
     }
     25%{
-
+        top: 40%;
+        left: 40%;
     }
     50%{
+        top: 20%;
+    left: 20%;
 
     }
     100%{
-
+        top: 30%;
+    left: 30%;
+    }
+}
+@keyframes moveb4{
+    0%{
+        bottom: 30%;
+        right: 30%;
+    }
+    25%{
+        bottom: 40%;
+        right: 40%;
+    }
+    50%{
+        bottom: 20%;
+        right: 20%;
+    }
+    100%{
+        bottom: 30%;
+        right: 30%;
+    }
+}
+@keyframes moveb5{
+    0%{
+        bottom: 15%;
+        right: 15%;
+    }
+    50%{
+        bottom: 5%;
+    
+    }
+    100%{
+        bottom: 15%;
+        right: 15%;
+    }
+}
+@keyframes moveb6{
+    0%{
+        bottom: 5%;
+        right: 5%;
+    }
+    25%{
+        right: 15%;
+    }
+    100%{
+        bottom: 5%;
+        right: 5%;
     }
 }
 
